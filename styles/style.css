@@ -1,19 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap%27');
+ 
 :root{
     --cor-primaria: #000000;
     --cor-secundaria: #ffffff;
     --cor-terciaria: #22D4FD;
 
+    --hover-principal: #242424;
+ 
     --fonte-primaria: "Krona One", sans-serif;
     --fonte-secundaria: "Montserrat", sans-serif;
+ 
+    --tam-padrao-fonte: 1.5rem;
+    --tam-maior-fonte: 2.25rem
 }
-
+ 
 *{
     margin: 0;
     padding: 0;
 }
-
+ 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     /*height: 100vh; /*usado para que o elemento ocupe 100% da altura*/
@@ -22,122 +30,141 @@ body{
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
-
+ 
+ 
 .cabecalho{
-    padding: 3% 0% 0% 15%;
-    padding-right: 15%;
+    background-color: var(--cor-primaria);
+    padding: 70px 350px 50px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    border-bottom: 2px solid #534f4f8a;
 }
-
+ 
 .tema{
     background-color: var(--cor-primaria);
     border: 0;
-    font-size: 1.5rem;
+    font-size: var(--tam-padrao-fonte);
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     color: var(--cor-terciaria);
+    width: auto;
 }
-
+ 
 .tema:hover{
     cursor: pointer;
     color: var(--cor-secundaria);
 }
-
+ 
 .tema-claro {
     --cor-primaria: #f0f0f0;
     --cor-secundaria: #121212;
-    --cor-terciaria: #0099e0; 
-}
+    --cor-terciaria: #0099e0;
 
+    --hover-principal: #d6d6d6;
+}
+ 
 .cabecalho__menu{
     display: flex;
     gap: 40px;
 }
-
+ 
 .cabecalho__menu__link{
-    font-size: 1.5rem;
+    font-size: var(--tam-padrao-fonte);
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
+    text-align: center;
 }
 
+.active {
+    font-size: 2rem;
+}
+ 
 .cabecalho__menu__link:hover{
     cursor: pointer;
     color: var(--cor-secundaria);
 }
-
-.link-ativo{
-    font-weight: bold;
-    border-bottom: 3px solid var(--cor-terciaria);
-    padding-bottom: 5px;
+ 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    padding: 70px 350px;
+    gap: 100px;
 }
-
+ 
 .apresentacao{
-    padding: 8% 15%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
+    scroll-margin-top: 200px;
 }
-
+ 
 .apresentacao__conteudo{
-    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-
+ 
 .apresentacao__conteudo__titulo{
-    font-size: 2.25rem;
+    font-size: var(--tam-maior-fonte);
     font-family: var(--fonte-primaria);
     max-width: 800px;
 }
-
+ 
 .apresentacao__conteudo__subtitulo{
-    font-size: 1.5rem;
+    font-size: var(--tam-padrao-fonte);
     font-family: var(--fonte-primaria);
     max-width: 800px;
 }
-
+ 
 .conteudo-acordeao {
-    max-height: 0; 
-    overflow: hidden; 
+    max-height: 0;
+    overflow: hidden;
     transition: max-height 0.2s ease;
-    padding: 0; 
+    padding: 0;
 }
-
+ 
 .bloco-acordeao.aberto .conteudo-acordeao {
     max-height: 10000px;
 }
-
+ 
 .icone-acordeao {
-    display: inline-block; 
+    display: inline-block;
     transition: transform 0.3s;
-    font-size: 24px;
+    font-size: var(--tam-maior-fonte);
     font-weight: bold;
     color: var(--cor-terciaria);
 }
-
+ 
 .icone-acordeao:hover{
     cursor: pointer;
     color: var(--cor-secundaria);
 }
-
+ 
 .bloco-acordeao.aberto .icone-acordeao {
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
 }
-
+ 
 .apresentacao__conteudo__texto{
-    font-size: 1.5rem;
+    font-size: var(--tam-padrao-fonte);
     font-family: var(--fonte-secundaria);
 }
-
+ 
 .destaque{
     color: var(--cor-terciaria);
 }
-
+ 
 .apresentacao__conteudo__lista{
     display: flex;
     flex-direction: column;
@@ -146,10 +173,10 @@ body{
     gap: 20px;
     padding: 3% 0% 2% 0%;
     list-style-type: none;
-    font-size: 1.4rem;    
+    font-size: var(--tam-padrao-fonte);    
     font-family: var(--fonte-secundaria);
 }
-
+ 
 .apresentacao__conteudo__links{
     display: flex;
     flex-direction: column;
@@ -157,13 +184,13 @@ body{
     align-items: center;
     gap: 32px;
 }
-
+ 
 .apresentacao__conteudo__links__subtitulo{
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: var(--tam-padrao-fonte);
 }
-
+ 
 .apresentacao__conteudo__links__link{
     display: flex;
     justify-content: center;
@@ -174,60 +201,89 @@ body{
     border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: var(--tam-padrao-fonte);
     font-weight: 600;
     font-family: var(--fonte-secundaria);
     padding: 21px 0px;
     text-decoration: none;
 }
-
+ 
 .apresentacao__conteudo__links__link:hover{
     border: 2px solid var(--cor-secundaria);
+    background-color: var(--hover-principal);
     cursor: pointer;
 }
-
+ 
+.link-tema-claro{
+    background-color: #eee;
+}
+ 
 .apresentacao__foto{
     width: 40%;
     border: var(--cor-terciaria) 5px solid;
     border-radius: 16px;
 }
-
+ 
 .rodape{
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
     padding: 27px;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: var(--tam-padrao-fonte);
     font-weight: 400;
 }
-
+ 
 .rodape__paragrafo{
-    font-size: 1.5rem;
+    font-size: var(--tam-padrao-fonte);
 }
-
-@media(max-width: 1200px){
+ 
+@media(max-width: 1600px){
     .cabecalho{
-        padding-left: 0%;
+        padding: 70px 100px 50px;
+    }
+ 
+    .container{
+        padding: 70px 100px;
+    }
+}
+ 
+@media(max-width: 900px){
+    :root{
+        --tam-padrao-fonte: 1rem;
+        --tam-maior-fonte: 1.8rem
+    }
+}
+ 
+@media(max-width: 700px){
+    .cabecalho{
+        padding: 70px 50px 50px;
+    }
+ 
+    .container{
+        padding: 70px 50px;
+    }
+ 
+    .apresentacao__foto{
+        display: none;
+    }
+}
+ 
+@media (max-width: 640px) {
+   .cabecalho{
+        padding: 40px 25px 40px;
+    }
+ 
+    .container{
+        padding: 20px 25px;
+    }
+
+
+    .cabecalho{
+        white-space: nowrap;
     }
 
     .cabecalho__menu{
-        justify-content: center;
+        gap: 20px;
     }
-
-    .apresentacao{
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 8% 5%;
-    }
-
-    .apresentacao__conteudo{
-        align-items: center;
-        
-    }
-
-    .apresentacao__conteudo{
-        width: auto;
-    }
-    
 }

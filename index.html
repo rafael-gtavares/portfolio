@@ -10,37 +10,117 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="resume.html">Currículo</a>
+            <a class="cabecalho__menu__link" href="#home">Home</a>
+            <a class="cabecalho__menu__link" href="#about">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="#resume">Currículo</a>
         </nav>
 
         <button class="tema" id="botao-alternar-tema">
             ☀️ Mudar para Claro
         </button>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Leve seu negócio ao topo com <strong class="destaque">um Front-end impressionante!</strong></h1>
+    <main class="container">
+        <section class="apresentacao" id="home">
+            <section class="apresentacao__conteudo">
+                <h1 class="apresentacao__conteudo__titulo">Leve seu negócio ao topo com <strong class="destaque">um Front-end impressionante!</strong></h1>
 
-            <p class="apresentacao__conteudo__texto">Prazer, sou Rafael Tavares, desenvolvedor Front-end com foco em <strong class="destaque">HTML, CSS e JavaScript</strong>. Transformo ideias em sites modernos, rápidos e funcionais para designers e empreendedores que buscam presença digital de verdade.<br>Quer dar vida ao seu projeto? Vamos conversar!</p>
+                <p class="apresentacao__conteudo__texto">Prazer, sou Rafael Tavares, desenvolvedor Front-end com foco em <strong class="destaque">HTML, CSS e JavaScript</strong>. Transformo ideias em sites modernos, rápidos e funcionais para designers e empreendedores que buscam presença digital de verdade.<br>Quer dar vida ao seu projeto? Vamos conversar!</p>
 
-            <div class="apresentacao__conteudo__links">
-                <h2 class="apresentacao__conteudo__links__subtitulo">Acesse minhas redes:</h2>
+                <div class="apresentacao__conteudo__links">
+                    <h2 class="apresentacao__conteudo__links__subtitulo">Acesse minhas redes:</h2>
 
-                <a class="apresentacao__conteudo__links__link" href="https://github.com/rafael-gtavares" target="_blank">
-                    <img src="./imagens/github.png" alt="Ícone do Github">
-                    Github
-                </a>
-                <a class="apresentacao__conteudo__links__link" href="https://www.linkedin.com/in/rafael-tavares2008" target="_blank">
-                    <img src="./imagens/linkedin.png" alt="Ícone do Linkedin">
-                    Linkedin
-                </a>
-            </div>
+                    <a class="apresentacao__conteudo__links__link" href="https://github.com/rafael-gtavares" target="_blank">
+                        <img src="./imagens/github.png" alt="Ícone do Github">
+                        Github
+                    </a>
+                    <a class="apresentacao__conteudo__links__link" href="https://www.linkedin.com/in/rafael-tavares2008" target="_blank">
+                        <img src="./imagens/linkedin.png" alt="Ícone do Linkedin">
+                        Linkedin
+                    </a>
+                </div>
+            </section>
+
+            <img class="apresentacao__foto" src="../imagens/foto-rafael.jpg" alt="Foto de Rafael Tavares na praia">
         </section>
 
-        <img class="apresentacao__foto" src="../imagens/foto-rafael.jpg" alt="Foto de Rafael Tavares na praia">
+        <section class="apresentacao" id="about">
+            <section class="apresentacao__conteudo">
+                <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
+
+                <p class="apresentacao__conteudo__texto">Sou Estudante de Técnico em Informática no CEFET-RJ e um entusiasta do desenvolvimento web. Minha paixão pela tecnologia é sustentada por uma base sólida que inclui Python, HTML, CSS, JavaScript e SQL, além de conhecimentos em Linux e redes.</p>
+                <p class="apresentacao__conteudo__texto">Atualmente, minha experiência vai além do currículo. Atuo como Monitor de Introdução à Programação, exercitando minha didática ao ajudar alunos a dominar lógica e algoritmos, e sou parte de um projeto que desenvolve uma aplicação institucional com QR Code para o CEFET-RJ. Essa iniciativa me proporciona experiência real em programação, organização de dados e entrega de soluções.</p>
+                <p class="apresentacao__conteudo__texto">Sou um profissional proativo, organizado e com foco no aprendizado contínuo. Busco uma oportunidade de estágio para aplicar minhas habilidades em projetos reais e contribuir com soluções criativas e bem estruturadas..</p>
+            </section>
+        </section>
+
+        <section class="apresentacao" id="resume">
+            <section class="apresentacao__conteudo">
+                <h1 class="apresentacao__conteudo__titulo">Currículo</h1>
+                <p class="apresentacao__conteudo__texto">Estudante do curso técnico de Informática no CEFET-RJ, com foco em desenvolvimento front-end e experiência como monitor de programação. Busco estágio para aplicar e ampliar conhecimentos no desenvolvimento web, contribuindo com projetos reais e aprendendo em equipes.</p>
+        
+                <section class="bloco-acordeao">
+                    <h2 class="apresentacao__conteudo__subtitulo titulo-acordeao">Experiências e Projetos <span class="icone-acordeao">+</span></h2>
+
+                    <div class="conteudo-acordeao">
+                        <ul class="apresentacao__conteudo__lista">
+                            <li>Monitoria de Introdução à Programação - CEFET-RJ (2025)</li>
+                            <li> Projeto: <strong>Bosque Digital</strong> - <a class="cabecalho__menu__link" href="https://bosque-digital.netlify.app/" target="_blank">Acessar</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="bloco-acordeao">
+                    <h2 class="apresentacao__conteudo__subtitulo titulo-acordeao">Estudos e Certificações <span class="icone-acordeao">+</span></h2>
+
+                    <div class="conteudo-acordeao">
+                        <ul class="apresentacao__conteudo__lista">
+                            <li>Curso Python 3 Mundo 1 - Curso em Vídeo <a class="cabecalho__menu__link" href="../docs/Python 3 - Mundo 1 - Curso em Video.pdf" target="_blank">com certificado</a></li>
+                            <li>Curso Python 3 Mundo 2 - Curso em Vídeo <a class="cabecalho__menu__link" href="../docs/Python 3 - Mundo 2 - Curso em Video.pdf" target="_blank">com certificado</a></li>
+                            <li>Curso Python 3 Mundo 3 - Curso em Vídeo <a class="cabecalho__menu__link" href="../docs/Python 3 - Mundo 3 - Curso em Video.pdf" target="_blank">com certificado</a></li>
+                            <li>HTML e CSS: Ambientes de desenvolvimento, estrutura de arquivos e tags - Alura Cursos <a class="cabecalho__menu__link" href="../docs/Curso HTML e CSS - ambientes de desenvolvimento, estrutura de arquivos e tags - Alura.pdf" target="_blank">com certificado</a></li>
+                            <li>HTML e CSS: Classes, posicionamento e Flexbox - Alura Cursos <a class="cabecalho__menu__link" href="../docs/Curso HTML e CSS - Classes, posicionamento e Flexbox - Alura.pdf" target="_blank">com certificado</a></li>
+                            <li>HTML e CSS: Cabeçalho, footer e variáveis CSS - Alura Cursos <a class="cabecalho__menu__link" href="../docs/Curso HTML e CSS_ cabeçalho, footer e variáveis CSS - Alura.pdf" target="_blank">com certificado</a></li>
+                            <li>Curso Técnico de Informática - CEFET-RJ (em andamento)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="bloco-acordeao">
+                    <h2 class="apresentacao__conteudo__subtitulo titulo-acordeao">Conhecimentos técnicos <span class="icone-acordeao">+</span></h2>
+                    
+                    <div class="conteudo-acordeao">
+                        <ul class="apresentacao__conteudo__lista">
+                            <li>Lógica de programação, algoritmos e estrutura de dados</li>
+                            <li>HTML e CSS</li>
+                            <li>Python e JavaScript</li>
+                            <li>Noções de SQL e modelagem de banco de dados</li>
+                            <li>Sistema Operacional Linux (comandos e navegação no terminal)</li>
+                            <li>Arquitetura de computadores (teoria e prática)</li>
+                            <li>Redes de computadores (IP, protocolos e dispositivos)</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="bloco-acordeao">
+                    <h2 class="apresentacao__conteudo__subtitulo titulo-acordeao">Habilidades Pessoais <span class="icone-acordeao">+</span></h2>
+
+                    <div class="conteudo-acordeao">
+                        <ul class="apresentacao__conteudo__lista">
+                            <li>Comunicação clara e didática (experiência como monitor)</li>
+                            <li>Proatividade e organização</li>
+                            <li>Facilidade para aprender novas tecnologias</li>
+                            <li>Trabalho em equipe e colaboração em projetos</li>
+                            <li>Resolução de problemas</li>
+                            <li>Idiomas: Português (nativo), Inglês (intermediário)</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            
+        </section>
     </main>
+
+
     <footer class="rodape">
         <p class="rodape__paragrafo">Desenvolvido por Rafael Tavares.</p>
     </footer>
