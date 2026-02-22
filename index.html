@@ -60,107 +60,109 @@
             </div>
         </section>
 
-    <section class="apresentacao section" id="about">
-        <div class="apresentacao__conteudo">
-            <h2 class="apresentacao__conteudo__titulo">Sobre mim</h2>
-            
-            <p class="apresentacao__conteudo__texto">
-                Estudante de <span class="destaque">Informática no CEFET-RJ</span> e Desenvolvedor em constante evolução. 
-                Atualmente, aplico e expando meus conhecimentos como <span class="destaque">Estagiário na startup Maiz Integrada</span>, 
-                onde foco em transformar desafios em soluções digitais eficientes. Com base sólida em lógica e tecnologias modernas, 
-                busco criar interfaces que unem <span class="destaque">performance e design de alto nível</span>.
-            </p>
-
-            <div class="about__skills">
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">PostgreSQL</span>
-                <span class="skill-tag">Git</span>
-            </div>
-
-            <a href="./docs/Currículo - Rafael Tavares - TI.pdf" download class="cabecalho__botao about__btn">
-                Download CV
-            </a>
-        </div>
-    </section>
-
-    <section class="projetos section" id="projects">
-        <h2 class="apresentacao__conteudo__titulo" style="text-align: center; margin-bottom: 3rem;">Projetos em Destaque</h2>
-        
-        <div class="projetos__grid">
-            <div class="projeto__card">
-                <img src="./imagens/muralPensamentos.png" alt="Projeto 1">
-                <div class="projeto__card__infos">
-                    <h3>Mural de Pensamentos</h3>
-                    <p class="projeto__tags">HTML • CSS • JS</p>
-                    <button class="btn-detalhes" data-projeto="projeto1">Saiba Mais</button>
-                </div>
-            </div>
-
-            <div class="projeto__card">
-                <img src="./imagens/pautaDoDia.png" alt="Projeto 2">
-                <div class="projeto__card__infos">
-                    <h3>Pauta do Dia</h3>
-                    <p class="projeto__tags">HTML • CSS • JS</p>
-                    <button class="btn-detalhes" data-projeto="projeto2">Saiba Mais</button>
-                </div>
-            </div>
-
-            <div class="projeto__card">
-                <span class="tag-status">Em Desenvolvimento</span>
-                <img src="./imagens/ricardo-corretor.png" alt="Projeto 3">
-                <div class="projeto__card__infos">
-                    <h3>RT Imóveis</h3>
-                    <p class="projeto__tags">HTML • CSS • JS</p>
-                    <button class="btn-detalhes" data-projeto="projeto3">Saiba Mais</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="modal-projeto" class="modal">
-        <div class="modal-content">
-            <span class="fechar-modal">&times;</span>
-            <div id="modal-body">
-                </div>
-        </div>
-    </div>
-
-    <section class="contato section" id="contact">
-        <div class="contato__card">
-            <div class="contato__info">
-                <h2 class="contato__titulo">Fale Comigo</h2>
-                <p class="contato__texto">
-                    Dúvidas ou propostas? Estou à disposição para conversar sobre novos projetos.
-                </p>
-                <div class="contato__detalhes">
-                    <a href="https://wa.me/5521996236303" target="_blank" class="contato__link">
-                        <img src="https://cdn.simpleicons.org/whatsapp/white" alt="WhatsApp">
-                        (21) 97481-1883
-                    </a>
-                    <p class="contato__link">
-                        <img id="icone-email" src="https://cdn.simpleicons.org/gmail/white" alt="Email">
-                        rafael.tavares.informatica@gmail.com
-                    </p>
-                </div>
-            </div>
-
-            <form id="meu-formulario" action="https://formsubmit.co/rafael.tavares.informatica@gmail.com" method="POST" class="contato__form_grid">
-                <input type="hidden" name="_next" value="https://seu-site.netlify.app/obrigado.html">
-                <input type="hidden" name="_captcha" value="false">
-
-                <div class="form__linha">
-                    <input type="text" name="name" placeholder="Seu Nome" required>
-                    <input type="email" name="email" placeholder="Seu E-mail" required>
-                </div>
-                <textarea name="message" rows="5" placeholder="No que posso ajudar?" required></textarea>
+        <section class="apresentacao section" id="about">
+            <div class="apresentacao__conteudo">
+                <h2 class="apresentacao__conteudo__titulo">Sobre mim</h2>
                 
-                <button type="submit" class="cabecalho__botao btn-enviar">Enviar Mensagem</button>
-            </form>
+                <p class="apresentacao__conteudo__texto">
+                    Estudante de <span class="destaque">Informática no CEFET-RJ</span> e Desenvolvedor em constante evolução. 
+                    Atualmente, aplico meus conhecimentos como <span class="destaque">Estagiário de Desenvolvimento</span> em uma startup (Stealth Mode), 
+                    onde foco em transformar desafios em soluções digitais eficientes. Com base sólida em lógica, 
+                    busco criar interfaces que unem <span class="destaque">performance e design de alto nível</span>.
+                </p>
+
+                <div class="about__skills">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Linux</span>
+                </div>
+
+                <a href="./docs/Currículo - Rafael Tavares - TI.pdf" download class="cabecalho__botao about__btn">
+                    Download CV
+                </a>
+            </div>
+        </section>
+
+        <section class="projetos section" id="projects">
+            <h2 class="apresentacao__conteudo__titulo" style="text-align: center; margin-bottom: 3rem;">Projetos em Destaque</h2>
+            
+            <div class="projetos__grid">
+                <div class="projeto__card">
+                    <img src="./imagens/muralPensamentos.png" alt="Projeto 1">
+                    <div class="projeto__card__infos">
+                        <h3>Mural de Pensamentos</h3>
+                        <p class="projeto__tags">HTML • CSS • JS</p>
+                        <button class="btn-detalhes" data-projeto="projeto1">Saiba Mais</button>
+                    </div>
+                </div>
+
+                <div class="projeto__card">
+                    <img src="./imagens/pautaDoDia.png" alt="Projeto 2">
+                    <div class="projeto__card__infos">
+                        <h3>Pauta do Dia</h3>
+                        <p class="projeto__tags">HTML • CSS • JS</p>
+                        <button class="btn-detalhes" data-projeto="projeto2">Saiba Mais</button>
+                    </div>
+                </div>
+
+                <div class="projeto__card">
+                    <span class="tag-status">Em Desenvolvimento</span>
+                    <img src="./imagens/ricardo-corretor.png" alt="Projeto 3">
+                    <div class="projeto__card__infos">
+                        <h3>RT Imóveis</h3>
+                        <p class="projeto__tags">HTML • CSS • JS</p>
+                        <button class="btn-detalhes" data-projeto="projeto3">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="modal-projeto" class="modal">
+            <div class="modal-content">
+                <span class="fechar-modal">&times;</span>
+                <div id="modal-body">
+                    </div>
+            </div>
         </div>
-    </section>
+
+        <section class="contato section" id="contact">
+            <div class="contato__card">
+                <div class="contato__info">
+                    <h2 class="contato__titulo">Fale Comigo</h2>
+                    <p class="contato__texto">
+                        Dúvidas ou propostas? Estou à disposição para conversar sobre novos projetos.
+                    </p>
+                    <div class="contato__detalhes">
+                        <a href="https://wa.me/5521996236303" target="_blank" class="contato__link">
+                            <img src="https://cdn.simpleicons.org/whatsapp/white" alt="WhatsApp">
+                            (21) 97481-1883
+                        </a>
+                        <p class="contato__link">
+                            <img id="icone-email" src="https://cdn.simpleicons.org/gmail/white" alt="Email">
+                            rafael.tavares.informatica@gmail.com
+                        </p>
+                    </div>
+                </div>
+
+                <form id="meu-formulario" action="https://formsubmit.co/rafael.tavares.informatica@gmail.com" method="POST" class="contato__form_grid">
+                    <input type="hidden" name="_next" value="https://seu-site.netlify.app/obrigado.html">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form__linha">
+                        <input type="text" name="name" placeholder="Seu Nome" required>
+                        <input type="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <textarea name="message" rows="5" placeholder="No que posso ajudar?" required></textarea>
+                    
+                    <button type="submit" class="cabecalho__botao btn-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="rodape">
