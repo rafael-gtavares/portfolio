@@ -1,0 +1,145 @@
+.contato.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato__card {
+    display: flex;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contato__info {
+    flex: 1;
+    background: rgba(43, 109, 241, 0.1);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contato__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+}
+
+.contato__texto {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.contato__detalhes {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contato__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.contato__link img { width: 20px; }
+
+.contato__link:hover { color: var(--cor-terciaria); }
+
+.contato__form_grid {
+    flex: 1.5;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form__linha {
+    display: flex;
+    gap: 1rem;
+}
+
+.contato__form_grid input, 
+.contato__form_grid textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-family: var(--fonte-secundaria);
+    outline: none;
+    transition: 0.3s;
+}
+
+.contato__form_grid input:focus, 
+.contato__form_grid textarea:focus {
+    border-color: var(--cor-terciaria);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-enviar {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family: var(--fonte-primaria);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .contato__card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .contato__info {
+        padding: 2rem;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        align-items: center;
+    }
+
+    .contato__texto {
+        display: none; 
+    }
+
+    .contato__detalhes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .contato__form_grid {
+        padding: 2rem;
+    }
+
+    .form__linha {
+        flex-direction: column;
+    }
+
+    .contato__link {
+        font-size: 14px;
+    }
+
+    #icone-email {
+        display: none;
+    }
+}

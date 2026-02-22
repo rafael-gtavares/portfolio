@@ -1,0 +1,209 @@
+.projetos.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projetos__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.projeto__card {
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto__card:hover {
+    transform: translateY(-12px);
+    border-color: var(--cor-terciaria);
+    box-shadow: 0 10px 30px rgba(43, 109, 241, 0.2);
+}
+
+.projeto__card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.projeto__card__infos {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.projeto__card__infos h3 {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.4rem;
+    color: var(--cor-secundaria);
+}
+
+.projeto__tags {
+    color: var(--cor-terciaria);
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.btn-detalhes {
+    width: 100%;
+    padding: 0.9rem;
+    background: transparent;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 0.75rem; 
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.btn-detalhes:hover {
+    background: var(--cor-terciaria);
+    box-shadow: 0 0 15px var(--cor-terciaria);
+}
+
+/* --- MODAL --- */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid var(--cor-terciaria);
+    width: 90%;
+    max-width: 850px;
+    border-radius: 25px;
+    position: relative;
+    padding: 3rem;
+    color: var(--cor-secundaria);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    animation: abrirModal 0.4s ease-out;
+}
+
+@keyframes abrirModal {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-flex {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    text-align: left;
+}
+
+.modal-img {
+    width: 50%;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-info { width: 50%; }
+
+.modal-btns {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+    line-height: 1;
+}
+
+.fechar-modal:hover { color: var(--cor-terciaria); }
+
+.tag-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--cor-terciaria);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.65rem;
+    font-family: var(--fonte-primaria);
+    text-transform: uppercase;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    .projetos__grid {
+        display: flex;
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory;
+        gap: 1.5rem;
+        padding: 1rem 1.5rem 2rem 1.5rem;
+        width: 100vw;
+        margin-left: -10%;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .projeto__card {
+        min-width: 85%;
+        scroll-snap-align: center;
+        flex-shrink: 0;
+    }
+
+    .projetos__grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .modal-content {
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+    
+    .modal-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    .modal-img, .modal-info {
+        width: 100%;
+    }
+
+    .modal-btns {
+        justify-content: center;
+    }
+
+    .fechar-modal {
+        color: var(--cor-terciaria);
+    }
+}
