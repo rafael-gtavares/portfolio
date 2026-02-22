@@ -1,5 +1,7 @@
 # 🚀 Meu Portfólio Pessoal - Rafael Tavares
 
+> **Confira o projeto online:** [https://rafael-gtavares.github.io/portfolio/](https://rafael-gtavares.github.io/portfolio/)
+
 Bem-vindo ao repositório do meu portfólio! Este projeto foi desenvolvido para centralizar meus principais trabalhos como Desenvolvedor Front-end, focando em uma interface moderna, responsiva e com alta performance.
 
 ## 🛠️ Tecnologias Utilizadas
