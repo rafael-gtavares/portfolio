@@ -41,7 +41,7 @@
     color: var(--cor-secundaria);
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: relative;
     transition: 0.3s;
 }
@@ -77,6 +77,12 @@
 
 .cabecalho__botao:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .cabecalho__menu__link {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 768px) {
