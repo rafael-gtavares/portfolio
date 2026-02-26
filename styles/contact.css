@@ -83,6 +83,7 @@
     font-family: var(--fonte-secundaria);
     outline: none;
     transition: 0.3s;
+    font-size: 0.95rem;
 }
 
 .contato__form_grid input:focus, 
